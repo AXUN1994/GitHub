@@ -27,6 +27,8 @@
 cd e:github/github
 git add 'using.txt'        //把文件添加到仓库
 git commit -m"wrote a using gitbash file" //提交到仓库   -m后面是本次提交的说明
+git status        //查看修改状态
+git diff           //查看具体修改内容
 //多次add不同文件，一次commit多个文件
   git add file1.txt
   git add file2.txt file3.txt
