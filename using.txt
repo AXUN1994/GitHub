@@ -21,9 +21,15 @@
   现在你需要将这个Key提交到GitHub，首先打开Key保存的位置（就是刚才那个默认的路径）.
   里面会有三个文件，找到id_rsa.pub，用文本编辑器打开，复制里面的全部字符（一个也不能少，也不能多，连个空格也不能多）。
   到GitHub，在右上方工具栏里找到Settings。在这个页面上有一个SSH Keys标签，点击New SSH key。Title可以随便填一个，Key就粘贴刚才的字符，提交。
-4.测试是否连接成功。SSH -T git@github.com
-5.把文件添加到版本库。（不要使用windows自带的记事本编辑，也不要用word编辑。字符集为utf-8）
-先编辑一个文件，放在版本库下。
+5.测试是否连接成功。SSH -T git@github.com
+6.把文件添加到版本库。（不要使用windows自带的记事本编辑，也不要用word编辑。字符集为utf-8）
+    先编辑一个文件，放在版本库下。
+    或者直接在gitbash中用命令行增加文件。
+	vim README.md
+	首先按 i 进入insert模式对内容进行修改。之后Esc退出输入状态，然后Shift+;，再输入wq(保存改动）或q（不保存改动），就退出了。
+	// rm README.md        rm命令用来删除文件
+	//mv readme.md README.md        mv命令用来重命名，前者是原来的文件名，后者是修改后的文件名。
+下面则为把文件添加到版本库。
 cd e:github/github
 git add 'using.txt'        //把文件添加到仓库
 git commit -m"wrote a using gitbash file" //提交到仓库   -m后面是本次提交的说明

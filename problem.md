@@ -8,3 +8,9 @@ gitbash使用中的一些常见问题
              1.输入：wq注意是冒号+wq，直接保存退出
              2.输入：q就是直接退出
              3.在键盘上按ctrl + z(强制退出)
+2.弹出错误：
+  fatal: ... does not appear to be a git repository
+  fatal: Could not read from remote repository.
+  Please make sure you have the correct access rights and the repository exists.
+解决方法：
+	修改 .git 下的 config 文件，修改url的内容。
