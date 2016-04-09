@@ -1,4 +1,4 @@
-1.在.md文件中添加图片，语法为 ![](url)
+1.在.md文件中添加图片，语法为 "![](url)"
 	示例如下：
-	![images](https://github.com/AXUN1994/github/blob/master/images/example.png)
+//	![images](https://github.com/AXUN1994/github/blob/master/images/example.png)
 	//[]内为说明文字，可随意填写
