@@ -14,4 +14,9 @@ gitbash使用中的一些常见问题
   Please make sure you have the correct access rights and the repository exists.
 解决方法：
 	修改 .git 下的 config 文件，修改url的内容。
+3.warning: LF will be replaced by CRLF in README.md.
+   The file will have its original line endings in your working directory.
+   解决方法： git config core.autocrlf false
+	再执行add操作。
+
 
