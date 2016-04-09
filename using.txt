@@ -31,3 +31,24 @@ git commit -m"wrote a using gitbash file" //提交到仓库   -m后面是本次�
   git add file1.txt
   git add file2.txt file3.txt
   git commit -m"add 3 files"
+6.把本地仓库上传到github。
+git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git 
+#如果提示出错信息，fatal: remote origin already exists.
+    （1）先输入$ git remote rm origin
+    （2）再输入$ git remote add origin git@github.com:XX/XXX.git
+git push origin master
+#如果提示出错信息：error:failed to push som refs to .......
+  （1）先输入$ git pull origin master //先把远程服务器github上面的文件拉下来
+  （2）再输入$ git push origin master
+  （3）如果出现报错 fatal: Couldn't find remote ref master或者fatal: 'origin' does not appear to be a git repository以及fatal: Could not read from remote repository.
+  （4）则需要重新输入$ git remote add origingit@github.com:djqiang/gitdemo.git
+7.总结
+  使用git在本地创建一个项目的过程
+    $ makdir ~/hello-world    //创建一个项目hello-world
+    $ cd ~/hello-world       //打开这个项目
+    $ git init             //初始化 
+    $ touch README
+    $ git add README        //更新README文件
+    $ git commit -m 'first commit'     //提交更新，并注释信息“first commit”
+    $ git remote add origin git@github.com:defnngj/hello-world.git     //连接远程github项目  
+    $ git push -u origin master     //将本地项目更新到github项目上去
