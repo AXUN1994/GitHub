@@ -45,11 +45,11 @@ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项�
     （1）先输入$ git remote rm origin
     （2）再输入$ git remote add origin git@github.com:XX/XXX.git
 git push origin master
-#如果提示出错信息：error:failed to push som refs to .......
+#如果远程版本库上的文件内容和本地文件内容不一致，会提示出错信息：error:failed to push som refs to .......
   （1）先输入$ git pull origin master //先把远程服务器github上面的文件拉下来
   （2）再输入$ git push origin master
   （3）如果出现报错 fatal: Couldn't find remote ref master或者fatal: 'origin' does not appear to be a git repository以及fatal: Could not read from remote repository.
-  （4）则需要重新输入$ git remote add origingit@github.com:djqiang/gitdemo.git
+  （4）则需要重新输入$ git remote add origin git@github.com:djqiang/gitdemo.git
 7.总结
   使用git在本地创建一个项目的过程
     $ makdir ~/hello-world    //创建一个项目hello-world
