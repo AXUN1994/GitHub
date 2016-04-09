@@ -31,7 +31,7 @@
 	//mv readme.md README.md        mv命令用来重命名，前者是原来的文件名，后者是修改后的文件名。
 下面则为把文件添加到版本库。
 cd e:github/github
-git add 'using.txt'        //把文件添加到仓库
+git add using.txt        //把文件添加到仓库
 git commit -m"wrote a using gitbash file" //提交到仓库   -m后面是本次提交的说明
 git status        //查看修改状态
 git diff           //查看具体修改内容
