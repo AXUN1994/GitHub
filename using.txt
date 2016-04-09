@@ -59,4 +59,6 @@ git push origin master
     $ git add README        //更新README文件
     $ git commit -m 'first commit'     //提交更新，并注释信息“first commit”
     $ git remote add origin git@github.com:defnngj/hello-world.git     //连接远程github项目  
-    $ git push -u origin master     //将本地项目更新到github项目上去
+    $ git push -u origin master     //将本地项目更新到github项目上去(远程版本库为空时才奏效)
+8.从远程更新到本地版本库
+git clone git@github.com:XX/XXX.git
