@@ -2,3 +2,10 @@
 	示例如下：
 	![images](https://github.com/AXUN1994/github/blob/master/images/example.png)
 	//[]内为说明文字，可随意填写
+2.远程版本库覆盖本地版本库
+	git pull origin master
+3.下载远程版本库到本地
+	git clone git@github.com:XX/XXX.git
+4.git中移除已经被删除的文件
+	git rm $(git ls-files --deleted)
+
