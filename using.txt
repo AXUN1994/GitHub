@@ -29,9 +29,10 @@
 	首先按 i 进入insert模式对内容进行修改。之后Esc退出输入状态，然后Shift+;，再输入wq(保存改动）或q（不保存改动），就退出了。
 	// rm README.md        rm命令用来删除文件
 	//mv readme.md README.md        mv命令用来重命名，前者是原来的文件名，后者是修改后的文件名。
-下面则为把文件添加到版本库。
+下面则为把文件添加到版本库，也可以直接添加文件夹。
 cd e:github/github
 git add using.txt        //把文件添加到仓库
+或者 git add filename  //直接添加文件夹到仓库
 git commit -m"wrote a using gitbash file" //提交到仓库   -m后面是本次提交的说明
 git status        //查看修改状态
 git diff           //查看具体修改内容
